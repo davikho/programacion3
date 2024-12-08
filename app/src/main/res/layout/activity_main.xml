@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Mensaje inicial -->
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estoy pensando en un número entre 1 y 100."
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:paddingBottom="16dp"
+        android:textAlignment="center" />
+
+    <!-- Campo para ingresar el número -->
+    <EditText
+        android:id="@+id/editTextGuess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Introduce tu número"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botón para adivinar -->
+    <Button
+        android:id="@+id/buttonGuess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adivinar"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Texto para mostrar intentos restantes -->
+    <TextView
+        android:id="@+id/textViewAttempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intentos restantes: 10"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:paddingBottom="16dp" />
+
+    <!-- Botón para reiniciar el juego -->
+    <Button
+        android:id="@+id/buttonRestart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
